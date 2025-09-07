@@ -29,7 +29,16 @@ public class Main {
         System.out.println();
 
         // Задача 3
-        int year = 2025;
+        int year = 1584;
+        if (year < 1584) {
+            System.out.println("Еще не ввели понятие високосного года");
+        } else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println("Год является високосным");
+        } else {
+            System.out.println("Год не является високосным");
+        }
+        // Отступ для визуального разделения задач
+        System.out.println();
 
         // Задача 4
         int deliveryDistance = 95;
@@ -46,5 +55,48 @@ public class Main {
         System.out.println("Время доставки: " + deliveryTime);
         // Отступ для визуального разделения задач
         System.out.println();
+
+        // Задача 5
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+                System.out.println("Зима");
+                break;
+            case 2:
+                System.out.println("Зима");
+                break;
+            case 3:
+                System.out.println("Весна");
+                break;
+            case 4:
+                System.out.println("Весна");
+                break;
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+                System.out.println("Лето");
+                break;
+            case 7:
+                System.out.println("Лето");
+                break;
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+                System.out.println("Осень");
+                break;
+            case 10:
+                System.out.println("Осень");
+                break;
+            case 11:
+                System.out.println("Осень");
+                break;
+            case 12:
+                System.out.println("Зима");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+        }
     }
 }
