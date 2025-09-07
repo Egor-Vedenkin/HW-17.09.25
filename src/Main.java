@@ -27,5 +27,24 @@ public class Main {
         }
         // Отступ для визуального разделения задач
         System.out.println();
+
+        // Задача 3
+        int year = 2025;
+
+        // Задача 4
+        int deliveryDistance = 95;
+        int deliveryTime = 0;
+        if (deliveryDistance > 100) {
+            System.out.println("Доставки нет");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            deliveryTime = 3;
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            deliveryTime = 2;
+        } else if (deliveryDistance <= 20) {
+            deliveryTime = 1;
+        }
+        System.out.println("Время доставки: " + deliveryTime);
+        // Отступ для визуального разделения задач
+        System.out.println();
     }
 }
