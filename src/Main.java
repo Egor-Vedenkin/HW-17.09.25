@@ -15,6 +15,17 @@ public class Main {
         System.out.println();
 
         // Задача 2
-
+        int clientDeviceYear = 2015;
+        if (clientDeviceYear < 2015 && clientOS == 0) {
+            System.out.println("Установите облегченную версию приложения для IOS по ссылке");
+        } else if (clientDeviceYear < 2015 && clientOS == 1) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (clientDeviceYear >= 2015 && clientOS == 0) {
+            System.out.println("Установите версию приложения для IOS по ссылке");
+        } else if (clientDeviceYear >= 2015 && clientOS == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        // Отступ для визуального разделения задач
+        System.out.println();
     }
 }
